@@ -1,66 +1,69 @@
+
+<script src="script.js"></script>
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
-                                              
 const perguntas = [
     {
-        enunciado: "Qual seu estilo de roupa favorito?",
-        alternativas: [
-          texto: "Elegante",
-          afirmação: "Casual"
+        texto: "Assim que terminou a temporada, o corinthians planeja fazer uma reformulação no elenco , então ele está pensando em contratar dois meias, Quais contratar?",
+        afirmação: [
+            "igor Coronado",
+            "Rodrigo Garro"
         ]
     },
     {
-        enunciado: "Qual combinação de cores você prefere?",
-        alternativas: [
-          texto: "Branco e bege.",
-          afirmação: "Branco e preto.",
+          texto: "Com a divida do Corinthians, ele planeja diminuir a divida com a entradado novo presidente, quem seria um bom nome para a presidencia do Corinthians?",
+          afirmação: [
+            "augusto Melo",
+            "André Negão"
         ]
     },
     {
-        enunciado: "Ao sair de casa, vocẽ escolhe ir com acessórios ou sem?",
-        alternativas: [
-          texto: "Com acessórios.",
-          afirmação: "Sem acessórios."
+      texto: "com a saída do Cassio do Corinthians, o timão busca colocar um goleiro do elenco corintiano,qual seria um bom nome? "
+    ",
+          afirmação: [
+            "Carlos Miguel",
+            "Felipe Longo"
         ]
     },
     {
-        enunciado: "Na hora de se arrumar, vocẽ prioriza conforto ou elegãncia?",
-        alternativas: [
-          texto: "Conforto.",
-          afirmação: "Elegãncia."
+          texto: "Com o fim do Paulistão, o corinthians busca melhorar seu elenco, e com isso busca um novo treinador, Qual seria o melhor nome?",
+          afirmação: [
+            "Antonio Oliveira",
+            "Mano Menezes"
         ]
     },
     {
-        enunciado: "Você sabe montar looks com truques visuais?",
-        alternativas: [
-          texto: "Sim.",
-          afirmação: "Não."
+          texto: "O corinthians buca um titulo que ainda é inedito na sua enorme pratileira de troféus, e com isso e ele ganhar esse titulo, ele vai se consagrar campeão de tudo, Qual titulo que falta?",
+          afirmação: [
+            "Sudamericana",
+            "Libertadores"
         ]
-    },
-];
+    }
+]
 
 let atual = 0;
 let perguntaAtual;
+let historiaFinal = "";
 
 function mostraPergunta() {
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
     mostraAlternativas();
 }
+function mostraAlternativas(){
+    for(const alternativa of perguntaAtual.alternativas){
+            const botaoAlternativas = document.createElement("button");
+            botaoAlternativas.textContent = alternativa.texto;
+            botaoAlternativas.addEventListener("click",() => respostaSelecionada(alternativa));
+            caixaAlternativas.appendChild(botaoAlternativas);   
+           
 
-function mostraAlternativas() {
-    for (const alternativa of perguntaAtual.alternativas) {
-        const botaoAlternativas = document.createElement("button");
-        botaoAlternativas.textContent = alternativa.texto;
-        botaoAlternativas.addEventListener("click", function () {
-          atual++;
-          mostraPergunta();
-        })
-      caixaAlternativas.appendChild(botaoAlternativas);
-    }
+function respostaSelecionada(opcaoSelecionada) {
+    const afirmacoes = opcaoSelecionada.afirmacao;
+    historia += afirmacoes + "";
+    atual++;
+    mostraPergunta();
 }
-
-mostraPergunta();
