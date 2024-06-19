@@ -20,14 +20,14 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "Qual método vc prefere?",
+        enunciado: "Qual é a importância da análise de solo na prática agronômica?",
         alternativas: [
             {
-                texto: "Pinça.",
+                texto: "A análise de solo é crucial para determinar a fertilidade do solo, fornecendo informações sobre nutrientes disponíveis, pH, matéria orgânica e textura, orientando decisões de manejo como adubação e correção de nutrientes. ",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Cera.",
+                texto: "Cultivares adaptadas às condições locais são essenciais para maximizar a produtividade e a resistência a estresses bióticos e abióticos, garantindo que as culturas se desenvolvam de maneira mais saudável e eficiente em determinada região.",
                 afirmacao: "afirmação"
             }
         ]
