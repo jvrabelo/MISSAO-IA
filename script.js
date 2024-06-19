@@ -20,14 +20,14 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "Qual modelo de sobrancelha vc acha melhor?",
+        enunciado: "Como a rotação de culturas pode beneficiar a fertilidade do solo?",
         alternativas: [
             {
-                texto: "Arqueada.",
+                texto: "A rotação de culturas ajuda a melhorar a fertilidade do solo ao alternar plantas com diferentes exigências nutricionais e de manejo, reduzindo a incidência de doenças e pragas específicas de determinadas culturas..",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Curvada.",
+                texto: "A agronomia busca estudar e aplicar princípios científicos para otimizar a produção agrícola, promover a sustentabilidade ambiental e melhorar a qualidade dos alimentos. .",
                 afirmacao: "afirmação"
             }
         ]
