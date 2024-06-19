@@ -7,19 +7,6 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Já pensou em ser um agronomo",
-        alternativas: [
-            {
-                texto: "Sim!",
-                afirmacao: "afirmação"
-            },
-            {
-                texto: "Ainda não!",
-                afirmacao: "afirmação"
-            }
-        ]
-    },
-    {
         enunciado: "Como a rotação de culturas pode beneficiar a fertilidade do solo?",
         alternativas: [
             {
