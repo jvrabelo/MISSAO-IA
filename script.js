@@ -6,7 +6,7 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Já marcou sua sobrancelha?",
+        enunciado: "Já pensou em ser agronomo",
         alternativas: [
             {
                 texto: "Sim!",
@@ -19,53 +19,53 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "Qual modelo de sobrancelha vc acha melhor?",
+        enunciado: "qual melhor trator?",
         alternativas: [
             {
-                texto: "Arqueada.",
+                texto: "T7 200",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Curvada.",
+                texto: "7J 1200",
                 afirmacao: "afirmação"
             }
         ]
     },
     {
-        enunciado: "Qual método vc prefere?",
+        enunciado: "qual melhor marca",
         alternativas: [
             {
-                texto: "Pinça.",
+                texto: "case",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Cera.",
+                texto: "new holland",
                 afirmacao: "afirmação"
             }
         ]
     },
     {
-        enunciado: "Qual procedimento vc acha melhor?",
+        enunciado: "qual marca vc prefere",
         alternativas: [
             {
-                texto: "Henna.",
+                texto: "Valtra",
                 afirmacao: "afirmação"
             },
             {
-                texto: "micropigmentação.",
+                texto: "john deere",
                 afirmacao: "afirmação"
             }
         ]
     },
     {
-        enunciado: "Como vc prefere a henna? ",
+        enunciado: "qual bazuca é melhor",
         alternativas: [
             {
-                texto: "Natural.",
+                texto: "Jam 1500",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Marcada.",
+                texto: "Jam 2000",
                 afirmacao: "afirmação"
             }
         ]
