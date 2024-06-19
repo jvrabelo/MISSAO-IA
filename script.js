@@ -1,4 +1,3 @@
-
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
@@ -7,27 +6,40 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Como a rotação de culturas pode beneficiar a fertilidade do solo?",
+        enunciado: "Já marcou sua sobrancelha?",
         alternativas: [
             {
-                texto: "A rotação de culturas ajuda a melhorar a fertilidade do solo ao alternar plantas com diferentes exigências nutricionais e de manejo, reduzindo a incidência de doenças e pragas específicas de determinadas culturas..",
+                texto: "Sim!",
                 afirmacao: "afirmação"
             },
             {
-                texto: "A agronomia busca estudar e aplicar princípios científicos para otimizar a produção agrícola, promover a sustentabilidade ambiental e melhorar a qualidade dos alimentos. .",
+                texto: "Ainda não!",
                 afirmacao: "afirmação"
             }
         ]
     },
     {
-        enunciado: "Qual é a importância da análise de solo na prática agronômica?",
+        enunciado: "Qual modelo de sobrancelha vc acha melhor?",
         alternativas: [
             {
-                texto: "A análise de solo é crucial para determinar a fertilidade do solo, fornecendo informações sobre nutrientes disponíveis, pH, matéria orgânica e textura, orientando decisões de manejo como adubação e correção de nutrientes. ",
+                texto: "Arqueada.",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Cultivares adaptadas às condições locais são essenciais para maximizar a produtividade e a resistência a estresses bióticos e abióticos, garantindo que as culturas se desenvolvam de maneira mais saudável e eficiente em determinada região.",
+                texto: "Curvada.",
+                afirmacao: "afirmação"
+            }
+        ]
+    },
+    {
+        enunciado: "Qual método vc prefere?",
+        alternativas: [
+            {
+                texto: "Pinça.",
+                afirmacao: "afirmação"
+            },
+            {
+                texto: "Cera.",
                 afirmacao: "afirmação"
             }
         ]
